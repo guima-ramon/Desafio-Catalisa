@@ -40,6 +40,7 @@ main > section button {
     line-height: 20px;
     padding: 9px 23px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 button:active {
@@ -51,7 +52,7 @@ button:active {
     color: whitesmoke;
     font-weight: bold;
     list-style-type: none;
-    text-align: center;
+    text-align: justify;
     width: 80%;
 }
 
