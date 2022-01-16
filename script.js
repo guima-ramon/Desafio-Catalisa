@@ -1,5 +1,3 @@
-const botao = document.querySelector('button')
-
 const imagem1 = document.querySelector('img#personagem1')
 const nomeDoPersonagem1 = document.querySelector('#nome1')
 const especie1 = document.querySelector('#especie1')
@@ -15,7 +13,10 @@ const nomeDoPersonagem3 = document.querySelector('#nome3')
 const especie3 = document.querySelector('#especie3')
 const condicao3 = document.querySelector('#status3')
 
-traduzirCondicao = data => { 
+const botao = document.querySelector('button')
+
+
+traduzirCondicao = data => {
   if (data.status == 'unknown') {
     return 'Não sabemos'
   } else if (data.status == 'Alive') {
@@ -38,6 +39,7 @@ pegarPersonagem1 = () => {
       'Content-type': 'application/json'
     }
   })
+
     .then(response => response.json())
     .then(data => {
       imagem1.src = data.image
@@ -57,6 +59,7 @@ pegarPersonagem2 = () => {
       'Content-type': 'application/json'
     }
   })
+
     .then(response => response.json())
     .then(data => {
       imagem2.src = data.image
@@ -76,6 +79,7 @@ pegarPersonagem3 = () => {
       'Content-type': 'application/json'
     }
   })
+
     .then(response => response.json())
     .then(data => {
       imagem3.src = data.image
