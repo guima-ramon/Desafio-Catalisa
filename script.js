@@ -27,7 +27,7 @@ traduzirCondicao = data => {
 }
 
 gerarValorAletorio = () => {
-  return Math.floor(Math.random() * 671)
+  return Math.floor(Math.random() * 800)
 }
 
 pegarPersonagem1 = () => {
